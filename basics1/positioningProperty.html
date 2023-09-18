@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* in static the top , right,left,bottom not work */
+        div{
+           border: 1px solid black; 
+        }
+        img{
+            margin: 10px;
+        }
+        /* .image2{
+           RELATIVE:-USED FOR POSITNING LIKE LEFT,RIGHT,TOP,BOTTOM,IT MANTAIN GAP
+            position: relative;  here relative position is based on current windows
+           top: 100px; 
+          
+           position: absolute;
+           top: 100px;
+        } */
+        .container{
+            position: relative;
+            height: 8000px;
+            background-color: bisque;
+            /* 
+            ABSOLUTE:-USED FOR OVERLAPING LIKE LEFT,RIGHT,TOP,BOTTOM,IT DOESN'T MAINTAIN GAP
+            here relative position is based on closest position ancistor like div
+             */
+        }
+        .image4{
+            /* it is used for fixed the value */
+            position: fixed;
+
+        }
+        .image3{
+            /* it is used for stick for one container */
+            position: sticky;
+            top: 100px;
+        }
+        .box{
+            background-color: aquamarine;
+            height: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img 
+        src="pic1.jpg" 
+        alt="picture one"
+        width="300px"
+        height="200px"
+        class="image1"
+        />
+   
+        <img 
+        src="pic2.jpg" 
+        alt="picture second"
+        width="300px"
+        height="200px"
+        class="image2"
+        />
+    
+        <img 
+        src="pic3.jpg" 
+        alt="picture third"
+        width="300px"
+        height="200px"
+        class="image3"
+        />
+    
+        <img 
+        src="pic4.jpg" 
+        alt="picture fourth"
+        width="300px"
+        height="200px"
+        class="image4"
+        />
+    </div>
+
+    <div class="box">
+
+    </div>
+
+    <!-- 
+        sticky only show sticky behaviour inside its parent container like in the case od box container (change with every div)
+        but fixed is always fixed over the page
+    -->
+</body>
+</html>
