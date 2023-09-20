@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: rgb(223, 15, 15);
+        border: 3px solid white;
+        margin: 80px;
+        padding: 2px;
+        display: flex;
+        flex-wrap: wrap;
+        height: 250px;
+        border-radius: 25px;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      #box1 {
+        background-color: purple;
+        border-radius: 25px;
+        height: 200px;
+        width: 70px;
+        margin: 2px;
+        padding: 5px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+      }
+      div.outer1 {
+        background-color: purple;
+        border-radius: 25px;
+        height: 200px;
+        width: 350px;
+        margin: 2px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+      div.inner2 {
+        background-color: greenyellow;
+        height: 60px;
+        width: 70px;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 30px;
+      }
+      div.inner3 {
+        background-color: greenyellow;
+        height: 60px;
+        width: 70px;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 30px;
+      }
+      div.inner4 {
+        background-color: greenyellow;
+        height: 60px;
+        width: 70px;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 30px;
+        order: 200;
+      }
+      .child {
+        display: flex;
+        justify-content: space-around;
+        width: 300px;
+      }
+
+      div.inner5 {
+        background-color: greenyellow;
+        height: 118px;
+        width: 300px;
+        border-radius: 30px;
+        font-weight: bold;
+        font-size: 30px;
+      }
+
+      div.outer2 {
+        background-color: purple;
+        border-radius: 25px;
+        height: 200px;
+        width: 70px;
+        margin: 2px;
+        padding: 5px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      div.inner6 {
+        background-color: rgb(26, 160, 26);
+        height: 60px;
+        width: 68px;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 30px;
+      }
+      div.inner7 {
+        background-color: rgb(26, 160, 26);
+        height: 60px;
+        width: 68px;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 30px;
+      }
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box center" id="box1">1</div>
+      <div class="outer1">
+        <div class="child">
+          <div class="inner2 center">2</div>
+          <div class="inner3 center">3</div>
+          <div class="inner4 center">4</div>
+        </div>
+        <div class="inner5 center">5</div>
+      </div>
+      <div class="outer2 center">
+        <div class="inner6 center">6</div>
+        <div class="inner7 center">7</div>
+      </div>
+    </div>
+  </body>
+</html>
