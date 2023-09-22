@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .l left{
+            float: left;
+            margin-right: 1em;
+        }
+        .r right{
+            float: right;
+            margin-left: 1em;
+
+        }
+        *{
+            box-sizing: border-box;
+        }
+        bogy{
+            background-color: #1D1F1F;
+        }
+        article{
+            background-color: white;
+            padding: 1em;
+            width: 65%;
+            margin: 0 auto;
+            border: 5px solid #E18728;
+        }
+
+        h1{
+            font-style: italic;
+            text-align: center;
+        }
+        p{
+            font-family: sans-serif;
+        }
+        figure{
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+            padding: .2em;
+        }
+        figure img{
+            max-width: 100%;
+
+        }
+        /* @media all and(max-width:1100px){
+            article{
+                width: 80%;
+            }
+        }
+        @media all and(max-width:950px){
+            article{
+                width: 95%;
+            }
+        } */
+    </style>
+</head>
+<body>
+
+    <!--
+        FLOAT
+         The float property is used for positioning and formatting content
+          e.g. let an image float left to the text in a container.
+         -->
+    <!--
+         CLEAR
+         When we use the float property, and we want the next element below (not on right or left),
+          we will have to use the clear property.
+         -->
+     <!--
+         OVERFLOW
+         The CSS overflow property controls what happens to content that is too big to fit into an area.
+        properties:-visible,hidden,scroll,auto
+         -->
+         <article>
+
+             <h1>Image Floating in the Document Flow</h1>
+             <button>Toggle Floats</button>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Repellat nobis vitae, corrupti officiis expedita autem beatae. 
+                Nemo mollitia magni maiores, quam,quidem ut tempore doloribus quos, error voluptates assumenda rem?</p>
+            <figure class="l left">
+                <img src="pic1.jpg" alt="photo related to content">
+                <figcaption>Floating Left</figcaption>
+            </figure>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                 Possimus ut dolores et quae, voluptate, corporis atque voluptates officiis in, 
+                 iure perspiciatis nulla quidem facere nesciunt numquam asperiores perferendis debitis illum.</p>
+            <figure class="r right">
+                <img src="pic2.jpg" alt="photo related to content">
+                <figcaption>Floating Right</figcaption>
+            </figure>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Consequatur tempora beatae natus asperiores consequuntur, id minus libero cum adipisci aspernatur esse at, 
+                 illum itaque voluptatem provident doloribus ipsa assumenda sequi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Quis similique dolore ab nemo reprehenderit odio dolor omnis dolores error cupiditate consectetur deserunt maiores quidem doloribus, 
+                     asperiores numquam velit, non laudantium.
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Quis similique dolore ab nemo reprehenderit odio dolor omnis dolores error cupiditate consectetur deserunt maiores quidem doloribus, 
+                     asperiores numquam velit, non laudantium. </p>
+            </article>
+
+            </body>
+</html>
