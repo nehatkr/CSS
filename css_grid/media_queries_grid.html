@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid and Media queries</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+            padding: 2px;
+        }
+        @media only screen and (max-width:3oopx){
+            body{
+                background-color: red;
+            }
+            .container{
+           
+           grid-template-areas: 
+           'navbar navbar navbar navbar'
+           'section section section section'
+           'aside aside aside aside'
+           'footer footer footer footer';
+           
+       }
+            span{
+            display: block;
+            text-align: center;
+        }
+        }
+        @media only screen and (min-width: 300px) and (max-width:500px){
+            body{
+                background-color: blue;
+            }
+            .container{
+           
+           grid-template-areas: 
+           'navbar navbar navbar navbar'
+           'section section section section'
+           'aside aside aside aside'
+           'footer footer footer footer';
+           
+       }
+       span{
+            display: block;
+            text-align: center;
+        }
+       #aside{
+        display: none;
+       }
+        }
+        @media (min-width: 500px) and (max-width:800px){
+            body{
+                background-color: yellow;
+            }
+            .container{
+           
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+            padding: 2px;
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+        }
+        @media (min-width: 800px){
+            body{
+                background-color: green;
+            }
+        }
+        .boder-now{
+            border: 2px solid black;
+            padding: 10px 23px;
+            background-color: beige;
+        }
+        nav{
+            grid-area: navbar;
+        }
+        section{
+            grid-area: section;
+        }
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="boder-now">
+          <span>Home</span>
+          <span>About</span> 
+         <span> Services</span> 
+         <span>  Contact</span>
+        </nav>
+        <section class="boder-now">
+            <h2>Learn css</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, recusandae. Incidunt, quos esse. Blanditiis tenetur sed labore dicta. Natus maxime unde accusantium nam iure consectetur perferendis assumenda enim cumque quidem, velit ut nemo porro fugiat voluptatum quis fuga amet et?</p>
+        </section>
+        <aside class="boder-now">
+            <h1 >More about us</h1>
+        </aside>
+    </div>
+    <footer class="boder-now">>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ipsa? Magni, ipsum.
+    </footer>
+</body>
+</html>
